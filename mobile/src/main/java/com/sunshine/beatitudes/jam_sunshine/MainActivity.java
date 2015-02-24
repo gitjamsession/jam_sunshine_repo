@@ -13,6 +13,7 @@ import android.os.Build;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 
 public class MainActivity extends ActionBarActivity {
@@ -69,7 +70,8 @@ public class MainActivity extends ActionBarActivity {
                     "Tuesday, Rainy, 25DegCel"
             };
 
-            List<String> weekForecast= new ArrayList<String>(Arrays.asList(forecastArray));
+            List<String> weekForecast;
+            weekForecast = new ArrayList<String>(Arrays.asList(forecastArray));
             return rootView;
         }
     }
