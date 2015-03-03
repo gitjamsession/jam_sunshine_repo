@@ -92,7 +92,7 @@ public class ForecastFragment extends Fragment {
         weekForecast = new ArrayList<String>(Arrays.asList(forecastArray));
 
 
-        ArrayAdapter<String> mForecastAdapter = new ArrayAdapter<String>(
+                mForecastAdapter = new ArrayAdapter<String>(
                 getActivity(),
                 R.layout.list_item_forecast,
                 R.id.list_item_forecast_textview,
@@ -198,10 +198,11 @@ public class ForecastFragment extends Fragment {
             highAndLow = formatHighLows(high, low);
             resultStrs[i] = day + " - " + description + " - " + highAndLow;
         }
-
+/* Removing Debug Code for printing Forecast entries
         for (String s : resultStrs) {
             Log.v("STRING_TAG", "Forecast entry: " + s);
         }
+*/
         return resultStrs;
 
     }
